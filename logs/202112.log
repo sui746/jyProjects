@@ -1,0 +1,7 @@
+INFO	2021-12-17 15:38:26,672	[logger.py:37]	hello world
+INFO	2021-12-17 16:12:54,304	[logger.py:38]	hello world
+INFO	2021-12-31 11:20:13,053	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2021-12-31 11:20:13,679	[webpage.py:63]	输入文本：suihaonan
+INFO	2021-12-31 11:20:15,292	[webpage.py:63]	输入文本：Abc123456
+INFO	2021-12-31 11:20:16,889	[webpage.py:63]	输入文本：FUCK
+INFO	2021-12-31 11:20:18,947	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")

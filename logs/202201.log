@@ -1,0 +1,80 @@
+INFO	2022-01-13 16:58:07,112	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 16:58:08,514	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 16:58:10,315	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 16:58:11,935	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 16:58:14,280	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:04:06,788	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:04:07,414	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:04:09,029	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:04:10,638	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:04:12,696	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:06:06,072	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:06:06,700	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:06:08,317	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:06:09,921	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:06:11,982	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:13:52,635	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:13:53,273	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:13:54,895	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:13:56,491	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:13:58,546	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:16:04,122	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:16:04,752	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:16:06,366	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:16:07,965	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:16:10,018	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:17:35,779	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:17:36,426	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:17:38,042	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:17:39,641	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:17:41,703	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:18:15,922	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:18:16,554	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:18:18,176	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:18:19,769	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:18:21,825	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:22:20,282	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:22:20,921	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:22:22,533	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:22:24,137	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:22:26,200	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:51:31,997	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:51:32,632	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:51:34,246	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:51:35,848	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:51:37,903	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-13 17:52:02,921	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-13 17:52:03,555	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-13 17:52:05,168	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-13 17:52:06,772	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-13 17:52:08,842	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-14 11:23:43,707	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 11:23:45,410	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-14 11:23:48,022	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-14 11:23:49,630	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-14 11:23:51,840	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-14 11:23:53,106	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 13:49:15,791	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 13:49:16,419	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-14 13:49:18,033	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-14 13:49:19,632	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-14 13:49:21,686	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-14 13:49:22,717	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 13:50:03,487	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 13:50:04,128	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-14 13:50:05,738	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-14 13:50:07,345	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-14 13:50:09,400	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-14 13:50:10,442	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 13:53:54,696	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 13:53:55,332	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-14 13:53:56,950	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-14 13:53:58,541	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-14 13:54:00,601	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-14 13:54:01,626	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 15:40:06,952	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
+INFO	2022-01-14 15:40:07,581	[webpage.py:63]	输入文本：suihaonan
+INFO	2022-01-14 15:40:09,190	[webpage.py:63]	输入文本：Abc123456
+INFO	2022-01-14 15:40:10,781	[webpage.py:63]	输入文本：FUCK
+INFO	2022-01-14 15:40:12,837	[webpage.py:69]	点击元素：('xpath', "//*[@ type='button']")
+INFO	2022-01-14 15:40:13,865	[webpage.py:31]	打开网页：http://192.168.80.241/YBClientSystem/#/login
