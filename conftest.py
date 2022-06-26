@@ -10,7 +10,7 @@ driver = None
 
 
 @pytest.fixture(scope='session', autouse=True)
-def yb(request):
+def JYtest(request):
     global driver
     if driver is None:
         driver = webdriver.Chrome()
@@ -20,9 +20,9 @@ def yb(request):
         driver.quit()
 
     request.addfinalizer(fn)
-    yb=YanBao(driver)
-    yb.function.login()
-    return yb
+    JYtest=YanBao(driver)
+    # JYtest.function.login()
+    return JYtest
 
 # @pytest.hookimpl(hookwrapper=True)
 # def pytest_runtest_makereport(item):

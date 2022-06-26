@@ -9,9 +9,10 @@ from roles.role import YanBao
 
 class TestFuction:
 
-    def test_001(self, yb):
+    def test_001(self, JYtest):
 
-        yb.function.login()
+        JYtest.function.login()
+        JYtest.function.entry()
 
         # message=yb.search.sea('eadas1')
         # assert message=="asdas"
