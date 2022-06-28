@@ -28,4 +28,4 @@ class Element(object):
 
 if __name__ == '__main__':
     search = Element('search')
-    print(search['登录帐号'])
+    print(search['帐号'])

@@ -41,8 +41,39 @@ class FunctionPage(WebPage,ReadConfig):
         sleep()
         self.is_click(functions['定损模拟'])
         sleep()
+        self.is_frame()
+        sleep()
+        self.input_text(functions['来源'],'ZYIC')
+        sleep()
+        self.input_text(functions['单号'],'202206271')
+        sleep()
+        self.input_text(functions['报案号'],'202206271')
+        sleep()
+        self.input_text(functions['分公司代码'],'88')
+        sleep()
+        self.input_text(functions['中公司代码'],'88')
+        sleep()
+        self.is_click(functions['定损进入'])
+        sleep()
+        return self
 
-
-
+    def Entry_Information(self):
+        """录入信息"""
+        # 获取当前页面源代码
+        sleep()
+        self.refresh()
+        self.is_frames()
+        sleep()
+        # 定型
+        self.input_texts(functions['定型VIN码'], 'LVGDC46A0CG191914')
+        sleep()
+        self.is_click(functions['开始定型'])
+        sleep()
+        self.is_click(functions['查询'])
+        sleep()
+        self.is_click(functions['确定'])
+        sleep()
+        self.yes_confirm()
+        sleep()
 
 

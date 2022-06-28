@@ -6,7 +6,9 @@ selenium基类
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.keys import Keys
 
+from selenium import webdriver
 from config.conf import cm
 from utils.times import sleep
 from utils.logger import log
@@ -62,6 +64,21 @@ class WebPage(object):
         ele.send_keys(txt)
         log.info("输入文本：{}".format(txt))
 
+    # def input_texts(self, txt):
+    #     """clear方法不起作用时，用此方法"""
+    #     sleep()
+    #     # ctrl+a 全选
+    #     self.driver.send.keys(Keys.CONTROL, 'a')
+    #     self.driver.send.keys(txt)
+
+    def input_texts(self, locator, txt):
+        """clear方法不起作用时，用此方法"""
+        sleep()
+        # ctrl+a 全选
+        el = self.find_element(locator)
+        el.send.keys(Keys.CONTROL, 'a')
+        el.send.keys(txt)
+
     def is_click(self, locator):
         """点击"""
         self.find_element(locator).click()
@@ -73,6 +90,29 @@ class WebPage(object):
         _text = self.find_element(locator).text
         log.info("获取文本：{}".format(_text))
         return _text
+
+
+    def is_frame(self):
+        """定位内嵌页面"""
+        self.driver.switch_to.frame(0)
+
+    def alert_click(self):
+        """页面弹出的alert弹窗时  自动点击确定（消息弹窗）"""
+        self.driver.switch_to.alert.accept()
+
+    def yes_confirm(self):
+        sleep(2)
+        # 点击ok按钮
+        self.driver.switch_to.alert.accept()
+
+    def no_confirm(self):
+        sleep(2)
+        # 点击no按钮
+        self.driver.switch_to.alert.dismiss()
+
+    def is_frames(self):
+        """定位跳转的第二个页面"""
+        self.driver.switch_to.window(self.driver.window_handles[1])
 
     @property
     def get_source(self):
