@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
 
+
 from selenium import webdriver
 from config.conf import cm
 from utils.times import sleep
@@ -64,20 +65,19 @@ class WebPage(object):
         ele.send_keys(txt)
         log.info("输入文本：{}".format(txt))
 
-    # def input_texts(self, txt):
-    #     """clear方法不起作用时，用此方法"""
-    #     sleep()
-    #     # ctrl+a 全选
-    #     self.driver.send.keys(Keys.CONTROL, 'a')
-    #     self.driver.send.keys(txt)
 
     def input_texts(self, locator, txt):
-        """clear方法不起作用时，用此方法"""
+        """
+        lear方法不起作用时，用此方法
+        python语法中用 send_keys  用下划线，不用点
+        """
         sleep()
         # ctrl+a 全选
+        # self.find_element(locator).send_keys(Keys.CONTROL, 'a')
+        # self.find_element(locator).send_keys(txt)
         el = self.find_element(locator)
-        el.send.keys(Keys.CONTROL, 'a')
-        el.send.keys(txt)
+        el.send_keys(Keys.CONTROL, 'a')
+        el.send_keys(txt)
 
     def is_click(self, locator):
         """点击"""

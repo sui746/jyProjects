@@ -16,6 +16,7 @@ class FunctionPage(WebPage,ReadConfig):
         # url = ReadConfig.read_inifile(self,head="HOST",hand="HOST")
         url = ReadConfig.read_inifile(self,hand='HOST',head='HOST')
         WebPage.get_url(self,url)
+        # functios指元素，调用serach.yaml的列表元素
         self.input_text(functions['账号'], 'jy_zyic')
         sleep()
         self.input_text(functions['密码'], '123456')

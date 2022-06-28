@@ -4,7 +4,7 @@ import os
 import yaml
 # YAML是一种简洁的非标记语言。其以数据为中心，使用空白，缩进，分行组织数据，从而使得表示更加简洁
 from config.conf import cm
-
+# 此文件是读取page_element/search.yaml  下的元素信息用的
 
 class Element(object):
     """获取元素"""
