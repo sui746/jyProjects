@@ -14,6 +14,7 @@ class TestFuction:
         JYtest.function.login()
         JYtest.function.entry()
         JYtest.function.Entry_Information()
+        JYtest.function.Add_loss()
 
         # message=yb.search.sea('eadas1')
         # assert message=="asdas"
