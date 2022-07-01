@@ -16,12 +16,6 @@ class TestFuction:
         JYtest.function.Entry_Information()
         JYtest.function.Add_loss()
 
-        # message=yb.search.sea('eadas1')
-        # assert message=="asdas"
-
-    # def test_002(self, yb):
-        """登录"""
-        # self.yanbao.damage()
 
 
 
