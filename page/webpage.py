@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.select import Select
 
 
 from selenium import webdriver
@@ -110,9 +111,14 @@ class WebPage(object):
         # 点击no按钮
         self.driver.switch_to.alert.dismiss()
 
-    def is_frames(self):
+    def is_frames(self, num):
         """定位跳转的第二个页面"""
-        self.driver.switch_to.window(self.driver.window_handles[1])
+        self.driver.switch_to.window(self.driver.window_handles[num])
+
+    def is_select(self,element, num):
+        """带下拉列表元素定位的选择方法 element==元素，num==对应下拉列表的值"""
+        Select(self.find_element(element)).select_by_value(num)
+
 
     @property
     def get_source(self):

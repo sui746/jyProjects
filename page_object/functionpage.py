@@ -36,7 +36,7 @@ class FunctionPage(WebPage,ReadConfig):
         """
         return self
 
-    def entry(self):
+    def one_entry(self):
         """定损进入"""
         self.is_click(functions['运维管理'])
         sleep()
@@ -46,9 +46,9 @@ class FunctionPage(WebPage,ReadConfig):
         sleep()
         self.input_text(functions['来源'],'ZYIC')
         sleep()
-        self.input_text(functions['单号'],'20220908013')
+        self.input_text(functions['单号'],'2022091317')
         sleep()
-        self.input_text(functions['报案号'],'20220908013')
+        self.input_text(functions['报案号'],'2022091317')
         sleep()
         self.input_text(functions['分公司代码'],'88')
         sleep()
@@ -63,7 +63,7 @@ class FunctionPage(WebPage,ReadConfig):
         # 获取当前页面源代码
         sleep()
         self.refresh()
-        self.is_frames()
+        self.is_frames(1)
         sleep()
         # 定型
         self.input_texts(functions['定型VIN码'], 'LJ1EEAUUXJ7704396')
@@ -79,6 +79,8 @@ class FunctionPage(WebPage,ReadConfig):
         self.is_click(functions['弹窗确定'])
         sleep()
         self.is_click(functions['全车'])
+        sleep()
+        self.is_click(functions['内部'])    # 加个内部是因为外修关联了内部，不加内部有弹窗，加上可以规避弹窗
         sleep()
         self.is_click(functions['选择修理厂'])
         sleep()
@@ -96,7 +98,7 @@ class FunctionPage(WebPage,ReadConfig):
         self.is_click(functions['添加配件'])
         sleep()
         self.input_text(functions['配件录入'],'前保险杠皮')
-        sleep()
+        sleep(8)
         self.is_click(functions['配件查询'])
         sleep()
         self.is_click(functions['点选添加'])
@@ -110,4 +112,104 @@ class FunctionPage(WebPage,ReadConfig):
         self.is_click(functions['外修添加'])
         sleep()
         self.is_click(functions['关闭窗口'])
+        sleep()
+        self.input_text(functions['辅料价格'], '100')
+        sleep()
+        self.input_text(functions['修改配件价格'], '500')
+        sleep()
+        self.input_text(functions['修改外修价格'], '100')
+        sleep(3)
+        self.is_click(functions['完成'])
+        sleep(5)
+        self.is_click(functions['暂存'])
+        sleep()
+        # self.driver.close()
+        return self
+
+
+    def two_entry(self):
+        """核价进入"""
+        self.is_click(functions['运维管理'])
+        sleep()
+        self.is_click(functions['定损模拟'])
+        sleep()
+        self.is_frame()
+        sleep()
+        self.is_select(functions['请求类型'],'003')
+        sleep(3)
+        self.input_text(functions['核价来源'],'ZYIC')
+        sleep()
+        self.input_text(functions['核价单号'],'2022091317')
+        sleep()
+        self.input_text(functions['核价报案号'],'2022091317')
+        sleep()
+        self.input_text(functions['核价分公司代码'],'88')
+        sleep()
+        self.input_text(functions['核价中公司代码'],'88')
+        sleep()
+        self.is_click(functions['核价进入'])
+        sleep(3)
+    def Add_check(self):
+        """核价审核"""
+        # 切换标签页
+        # self.driver.switch_to.window(self.driver.window_handles[2])
+        sleep()
+        # 获取当前页面源代码
+        self.refresh()
+        # 定位跳转的第三个页面
+        self.is_frames(2)
+        sleep()
+        self.is_click(functions['配件全选'])
+        sleep()
+        self.is_click(functions['配件同意定损'])
+        sleep()
+        self.is_click(functions['外修全选'])
+        sleep()
+        self.is_click(functions['外修同意定损'])
+        sleep()
+        self.input_text(functions['备注意见'], '核价审核通过')
+        sleep()
+        self.is_click(functions['核价暂存'])
+        sleep()
+
+    def three_entry(self):
+        """核损进入"""
+        # 所有核价来源等信息 核损通用，配管核价核损页面元素一致
+        self.is_click(functions['运维管理'])
+        sleep()
+        self.is_click(functions['定损模拟'])
+        sleep()
+        self.is_frame()
+        sleep()
+        self.is_select(functions['请求类型'],'005')
+        sleep(3)
+        self.input_text(functions['核价来源'],'ZYIC')
+        sleep()
+        self.input_text(functions['核价单号'],'2022091317')
+        sleep()
+        self.input_text(functions['核价报案号'],'2022091317')
+        sleep()
+        self.input_text(functions['核价分公司代码'],'88')
+        sleep()
+        self.input_text(functions['核价中公司代码'],'88')
+        sleep()
+        self.is_click(functions['核价进入'])
+        sleep(3)
+    def Add_audit(self):
+        """核损审核"""
+        sleep()
+        # 获取当前页面源代码
+        self.refresh()
+        # 定位跳转的第四个页面
+        self.is_frames(3)
+        sleep()
+        self.is_click(functions['一键审核'])
+        sleep()
+        self.is_click(functions['配件全选框'])
+        sleep()
+        self.is_click(functions['同意定损方案'])
+        sleep()
+        self.input_text(functions['核损意见'], '核损审核通过')
+        sleep()
+        self.is_click(functions['核损暂存'])
         sleep()
